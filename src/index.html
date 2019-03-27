@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href=".\node_modules\bootstrap\dist\css\bootstrap.min.css"
+        />
+        <style>
+            .card {
+                width: 200px;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <input type="text" id="refInput"> -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <button id="get">Click me</button>
+                </div>
+                <div class="col">
+                    <input type="text" name="name" id="nameFilter" />
+                </div>
+                <div class="col">
+                    <label class="">
+                        <input
+                            type="checkbox"
+                            name="alive"
+                            id="alive"
+                            class=""
+                        />
+                        Alive only
+                    </label>
+                </div>
+                <div class="col d-none">
+                    <label>
+                        <input type="radio" name="gender" id="genderMale" />
+                        Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" id="genderFemale" />
+                        Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" id="genderAll" checked/>
+                        All genders
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="container"></div>
+
+        <template id="template-card">
+            <div class="card">
+                <img class="card-img-top" alt="Card image cap" />
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"></p>
+                    <div class="card-alert alert"></div>
+                </div>
+            </div>
+        </template>
+    </body>
+</html>
